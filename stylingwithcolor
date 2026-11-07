@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+    <head>
+        <title>HTML advanced notes</title>
+        <meta charset = "UTF-8">
+        <style>
+            .complimentry{ 
+                height:15px;
+                width:15px;
+                background-color:blue;
+                border-radius:5px;
+                border:inset 10px orangered;
+            }
+                .Triadic{
+                    height:15px;
+                    width:15px;
+                    background-color:blue;
+                    border-radius:5px;
+                    border:inset 10px yellow ;
+                    color:red
+                }
+                
+                .Analogous{
+                    height:15px;
+                width:15px;
+                background-color:rgb(12, 211, 68);
+                border-radius:5px;
+                border:inset 10px rgb(0, 242, 255) ;
+                }
+        </style>
+     </head>
+     <body>
+        <div colorwheel="complimentry">
+        <h1> complimentry</h1>
+        </div>
+        <div colorwheel="Triadic">
+        <h1>Triadic</h1>
+        </div>
+        <div colorwheel="Analogous">
+        <h1>Analogous</h1>
+        </div>
+    </body>
+</html>
