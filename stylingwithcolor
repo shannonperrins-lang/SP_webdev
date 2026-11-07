@@ -2,7 +2,7 @@
 <html lang="en"
     <head>
         <title>HTML advanced notes</title>
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <style>
             .complimentry{ 
                 height:15px;
@@ -31,7 +31,7 @@
      </head>
      <body>
         <div colorwheel="complimentry">
-        <h1> complimentry</h1>
+        <h1>complimentry</h1>
         </div>
         <div colorwheel="Triadic">
         <h1>Triadic</h1>
