@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
     <head>
         <title>HTML advanced notes</title>
-        <meta charset = "ITF-8">
+        <meta charset="ITF-8">
+        <style>
+            /* Cascading Style Sheets 
+            1. Selector => says what to change
+            2. Declaration
+                a. Property => What about the element to change
+                b. Value => How to change it
+            */
+        body{
+            color:blueviolet;
+            background-color:beige; 
+            border:;
+        }
+        h1{
+             text-align:center;
+        }
+        #even{
+            color: ;
+            text-decoration:
+        }
+        .lists{
+            width:50%;
+            background-color:
+            border-radius:5px;
+            font-size:2rem
+        }
+        </style>
     </head>
     <body>
         <h1> html advanced</h1>
         <h3>lists:</h3>
-        <ol type ="I">
-            <li>alex</li>
+        <div class="lists">
+        <ol>
+            <li id="even">alex</li>
             <li>katie</li>
-            <li>andrew</li>
+            <li id="even">andrew</li>
             <li>vienna</li>
         </ol>
         <ul>
                 <li><a href="https://labonnes.com/blog/2026/4/8/types-of-apples-a-complete-guide-to-choosing-the-best-at-the-market" target="_blank">apple</a></li>
-                <li>banana</li>
+                <li id="even">banana</li>
                 <li>organe</li>
-                <li>peach</li>
+                <li id="even">peach</li>
             </ul>
             <dl>
                 <dt>fall</dt>
                 <dd>halloween</dd>
-                <dd>thanksgiving</dd>
+                <dd >thanksgiving</dd>
                 <dt>winter</dt>
                 <dd>christmas</dd>
                 <dd>hanukkah</dd>
                 <dd>new years</dd>
+            </dl>
+            </div>
         <h3> attributes:</h3>
-        <div></div>
         <a href=""target="_blank"><img src = "https://upload.wikimedia.org/wikipedia/commons/2/22/Mount_Timpanogos_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt = "mt timp" width="250px"></a>
             <p>image from: wikimedia commons</p>
-        </div>
+        
         <div>
             <img src="images.jpg" alt="another timp" width="250px">
             <p>image from: <a href = "https://commons.wikimedia.org/wiki/File:Mount_Timpanogos_-_01-07-08.jpg"target="_blank">wikimedia commons</a> </p>
