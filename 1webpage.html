@@ -9,13 +9,30 @@
             color:cadetblue;
             background-color:beige; 
             border:outset 5px darkblue;
+            font-weight: initial;
+           margin-top: 25px;
+                padding: 25px;
         }
         h1{
             text-align:center;
+            font-weight:unset
         }
         #img{
             width:200px;
+            height:100px;
+            margin-top: 25px;
+                padding: 25px;
         }
+        #flex-wrapper{
+            display: flex;
+                flex-direction:row;
+                justify-content:space-around;
+                align-items:first baseline;
+                flex-wrap:initial;
+                margin-top: 25px;
+                padding: 25px;
+        }
+
         </style>
     </head>
     <body>
@@ -33,9 +50,15 @@
             <li> if you want some 3D gel to make cool desgins </li>
         </ol>
         <h4> there are many things you can do on your nails here is some exaples:</h4>
+         <div id="flex-wrapper">
+         <div id="box">
         <img id="img" src="https://nz-website-media-r2-pub.gocheckin.net/20894-12776/page/gallery-dreamstimemedium_361077783-35.webp" alt="nail idea">
             <p>image from: Easy-Peasy.AI - AI Image Generator </p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14PKJRhy5xXpl9rGHpD_9hEYFSMtv2oxBfVwFLYImmA&s=10" alt="another nail idea">
+            </div>
+            <div id="box">
+        <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14PKJRhy5xXpl9rGHpD_9hEYFSMtv2oxBfVwFLYImmA&s=10" alt="another nail idea">
            <p> image from: <a href="https://www.publicdomainpictures.net/jp/view-image.php?image=819992&picture=zhi-zhuno-chaoneiru"target="_blank">public domain pictures</a> </p>
+           </div>
+           </div>
     </body>
-    </html>
+</html>
