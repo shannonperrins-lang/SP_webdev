@@ -60,5 +60,32 @@
            <p> image from: <a href="https://www.publicdomainpictures.net/jp/view-image.php?image=819992&picture=zhi-zhuno-chaoneiru"target="_blank">public domain pictures</a> </p>
            </div>
            </div>
-    </body>
-</html>
+           <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrHz5R-jgQ64xDSourP34XA9FdHos4vWBCer5SYX9ZA&s=10
+" alt="inspo" id="inspo" onmouseout="rotate">
+           <button onclick="showHide()"> click me!</button> `
+            <script>
+                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrHz5R-jgQ64xDSourP34XA9FdHos4vWBCer5SYX9ZA&s=10,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0N-9laeMTPkrKGHDGyDNPHhm2qGMZjk9ZgtX0nqokyw&s=10, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbzuUtVQ19jQ-0lBhSf4aSTDJFIdsKd4_GSiSMlFCgQ&s=10"]
+                let currentImage = 0
+                function rotate(){
+                    currentImage += 1
+                    if (currentImage > 3){
+                        currentImage = 0 
+                    }
+                    document.getElementById("inspo").src = images[currentImage]
+                }
+                function changeColor(){
+                    let currentColor = document.getElementById ("newColor").value
+                    document.getElementById("box").style.backgroundColor = currentColor
+                }
+                function showHide(){
+                    let item = document.getElementById("flex-wrapper")
+                    if(item.style.display == "flex"){
+                        item.style.display ="none"
+                        document.getElementById("text").innerHTML = "show Less"
+                }else{
+                    item.style.display = "flex"
+                }
+            }
+            </script>
+        </body>
+    </html>
