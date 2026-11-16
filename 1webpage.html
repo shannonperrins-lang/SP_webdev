@@ -74,31 +74,37 @@
         <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrHz5R-jgQ64xDSourP34XA9FdHos4vWBCer5SYX9ZA&s=10
             "alt="inspo" id="inspo" onmouseout="rotate">
         <p>    </p>
-           </div>
-           
-            <script>
-                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrHz5R-jgQ64xDSourP34XA9FdHos4vWBCer5SYX9ZA&s=10,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0N-9laeMTPkrKGHDGyDNPHhm2qGMZjk9ZgtX0nqokyw&s=10, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbzuUtVQ19jQ-0lBhSf4aSTDJFIdsKd4_GSiSMlFCgQ&s=10"]
-                let currentImage = 0
-                function rotate(){
-                    currentImage += 1
-                    if (currentImage > 3){
-                        currentImage = 0 
-                    }
-                    document.getElementById("inspo").src = images[currentImage]
-                }
-                function changeColor(){
-                    let currentColor = document.getElementById ("newColor").value
-                    document.getElementById("box").style.backgroundColor = currentColor
-                }
-                function showHide(){
-                    let item = document.getElementById("flex-wrapper")
-                    if(item.style.display == "flex"){
-                        item.style.display ="none"
-                        document.getElementById("text").innerHTML = "show Less"
-                }else{
-                    item.style.display = "flex"
-                }
+            <img id="more-image" src="images (3).jpg" alt="inspo">
+    </div>
+
+    <script>
+        const design = document.getElementById("design");
+
+        const originalImage = "";
+        const hoverImage = "";
+
+        design.onmouseover = function() {
+            design.src = hoverImage;
+        };
+
+        design.onmouseout = function() {
+            design.src = originalImage;
+        };
+
+        function toggleContent() {
+            const content = document.getElementById("more-content");
+            const button = document.getElementById("toggle-button");
+
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                button.textContent = "Show Less";
+            } else {
+                content.style.display = "none";
+                button.textContent = "Show More";
             }
-            </script>
-        </body>
-    </html>
+        }
+    </script>
+
+</body>
+</html>
+           
