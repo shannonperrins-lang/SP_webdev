@@ -56,7 +56,7 @@
         </ol>
         <h4> there are many things you can do on your nails here is some exaples:</h4>
          <div id="flex-wrapper">
-         <div id="box">
+        <div id="box">
          <div id="grid-wrapper">
         <div id="box">
         <img id="img" src="https://nz-website-media-r2-pub.gocheckin.net/20894-12776/page/gallery-dreamstimemedium_361077783-35.webp" alt="nail idea">
@@ -66,44 +66,33 @@
         <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14PKJRhy5xXpl9rGHpD_9hEYFSMtv2oxBfVwFLYImmA&s=10" alt="another nail idea">
            <p> image from: <a href="https://www.publicdomainpictures.net/jp/view-image.php?image=819992&picture=zhi-zhuno-chaoneiru"target="_blank">public domain pictures</a> </p>
            </div>
-           <button id="more" onclick="togglecontent">
-            show more inspo 
-        </button>
-        <div id="info about the photos" style="display:none;"
-        <h4> what i think about the inspo</h4>
-        <img scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrHz5R-jgQ64xDSourP34XA9FdHos4vWBCer5SYX9ZA&s=10
-            "alt="inspo" id="inspo" onmouseout="rotate">
-        <p>these nails might be a little harder sense they have 3d gel, but they are more of my type of nails. with 3d gel there is two types a more liquid and then there is one more of a soild. the liduid one is used for more of a fades out kind of 3d art where it is still there but it fades more soomthly into the nail. the soild is used more for like flowers and 3d art you really want to stand out. </p>
-            <img id="more-image" src="images (3).jpg" alt="inspo">
-    </div>
+            </div>
+            <div id="more inspo">
+                <h3> </h3>
+            </div>
 
-    <script>
-        const design = document.getElementById("design");
-
-        const originalImage = "";
-        const hoverImage = "";
-
-        design.onmouseover = function() {
-            design.src = hoverImage;
-        };
-
-        design.onmouseout = function() {
-            design.src = originalImage;
-        };
-
-        function toggleContent() {
-            const content = document.getElementById("more-content");
-            const button = document.getElementById("toggle-button");
-
-            if (content.style.display === "none") {
-                content.style.display = "block";
-                button.textContent = "Show Less";
-            } else {
-                content.style.display = "none";
-                button.textContent = "Show More";
+    <button onclick="showHide()"> click me!</button> `
+            <script>
+                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrHz5R-jgQ64xDSourP34XA9FdHos4vWBCer5SYX9ZA&s=10,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0N-9laeMTPkrKGHDGyDNPHhm2qGMZjk9ZgtX0nqokyw&s=10, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbzuUtVQ19jQ-0lBhSf4aSTDJFIdsKd4_GSiSMlFCgQ&s=10"]
+                let currentImage = 0
+                function rotate(){
+                    currentImage += 1 
+                     document.getElementById("sunset").src = images[currentImage]
+                    if (currentImage > 1){
+                        currentImage = 0 
+                    }
+                    document.getElementById("sunset").src = images[currentImage]
+                }
+                function showHide(){
+                    let item = document.getElementById("flex-wrapper")
+                    if(item.style.display == "flex"){
+                        item.style.display ="none"
+                        document.getElementById("text").innerHTML = "show Less"
+                }else{
+                    item.style.display = "flex"
+                }
             }
-        }
-    </script>
+            </script>
 
 </body>
 </html>
