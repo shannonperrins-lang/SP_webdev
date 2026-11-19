@@ -2,7 +2,7 @@
 
     <html lang = "en">
     <head>
-        <title> what I enjoy doing </title>
+        <title>arches national park  </title>
         <meta charset="UTF-8">
         <style>
         body{
@@ -15,20 +15,100 @@
         h1{
             text-align:center;
             font-weight:initial;
-            border:inset 10px greenyellow;
+            border:inset 10px red;
         }
-        #img{
+        h4{
+            text-align:center;
+            font-weight:initial;
+            border:inset 1opx red;
+        }
+        #night-time-img{
             width:200px;
             height:100px;
             margin-top:20px;
                 padding:20px;
         }
+        #big-arches{
+            width:200px;
+            height:100px;
+            margin-top:20px;
+                padding:20px;
+        }
+        #sunset-img{
+            width:200px;
+            height:100px;
+            margin-top:20px;
+                padding:20px;
+        }
+        #snowy-arch{
+            width:200px;
+            height:100px;
+            margin-top:20px;
+                padding:20px;
+        }
+        #flex-wrapper{
+            display:none;
+                flex-direction:row;
+                justify-content:space-around;
+                align-items:first baseline;
+                flex-wrap:initial;
+                margin-top: 25px;
+                padding: 25px;
+        }
         </style>
         <body>
             <h1> arches national park?</h1>
             <h3> what is arches natinal park</h3>
-            <p></p>
+            <p><i>    </i></p>
+            <h3>why it is so popluar</h3>
+        <p> <i>   </i> </p>
+        <h3> things to do there: </h3>
+        <ol type ="I">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <h4></h4>
+         <div id="flex-wrapper">
+            <p> without any citis lights the nitgh time is really pretty, there is one arch that is really famous which is in this photo it is called ....  </p>
+            <img id="night-time-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2QBVF6188QqoLOVFiiDZYdz_21qR0c51lOufI2N9IFg&s=10" alt="" onmouseout="rotate()">
+            <p>  image from: shutterstock.com </p>
+            </div>
+        <h4> see how pretty arches are with these photos</h4>
+        <img id="sunset-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7N0LcuoBbwLrmhcdRa6uir_zF0NJzFJ5CYFBB6FjoZA&s=10" alt="">
+            <p> image from: Matt Purciel </p>
+        <img id="big-arches" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUU6x2J5MOlp1CmcGSeybI5VWPPYtPlzDXy9iX9tbN_A&s=10" alt="">
+           <p> image from: Vecteezy  <a href="https://www.google.com/imgres?q=arches%20national%20park&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F070%2F422%2F386%2Flarge_2x%2Fspectacular-natural-arch-formation-in-arches-national-park-at-sunset-photo.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Fphoto%2F70422386-spectacular-natural-arch-formation-in-arches-national-park-at-sunset&docid=egBG7RBKG_Y2UM&tbnid=rFo9vqmaT6Z22M&vet=12ahUKEwjJge6V_JSYAxVfMEQIHXp9NCkQnPAOegUIwgUQAA..i&w=3593&h=1960&hcb=2&ved=2ahUKEwjJge6V_JSYAxVfMEQIHXp9NCkQnPAOegUIwgUQAA"target="_blank"></a> </p>
+           <img id="snowy-arch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0wvuZZeN295zWO9IPwguAHP4Lc-H-xMeIChLx7j82g&s=10" alt="">
+           <p> image from: Gettyimages.com</p>
+            <h3>more images and ideas on what to do </h3>
 
-        </body>
 
-        </html>
+        <button onclick="showHide()" id="button">more images and info</button>
+            <script>
+                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRhBJT6c1vN0kaDNgWkyQr0HFtkY3Fv2EPA0DBu-_eA&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2QBVF6188QqoLOVFiiDZYdz_21qR0c51lOufI2N9IFg&s=10"]
+                let currentImage = 0
+                function rotate(){
+                    currentImage += 1 
+                    if (currentImage > 1){
+                        currentImage = 0 
+                    }
+                    document.getElementById("night-time-img").src = images[currentImage]
+                }
+                function showHide(){
+                    let item = document.getElementById("flex-wrapper")
+                    if(item.style.display == "block"){
+                        item.style.display ="none"
+                        document.getElementById("button").innerHTML = "more images and info"
+                        
+                }else{
+                    item.style.display = "block"
+                    document.getElementById("button").innerHTML = "show less"
+                }
+            }
+            </script>
+
+</body>
+</html>
